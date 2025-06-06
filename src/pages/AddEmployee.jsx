@@ -24,12 +24,14 @@ const AddEmployee = ({ onAddEmployee }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     const newEmployee = {
-      id: Date.now(),
       ...formData,
       salary: Number(formData.salary),
       skills: formData.skills.split(',').map(s => s.trim()).filter(Boolean),
+      // no id here — json-server generates it
     };
+
     onAddEmployee(newEmployee);
     navigate('/');
   };
@@ -61,3 +63,4 @@ const AddEmployee = ({ onAddEmployee }) => {
 };
 
 export default AddEmployee;
+
