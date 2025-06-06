@@ -1,19 +1,13 @@
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+// src/App.jsx
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import PersonList from './components/Person/PersonList';
-import axios from 'axios';
-
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import PersonList from './pages/PersonList';
 import About from './pages/About';
 import AddEmployee from './pages/AddEmployee';
-
-// import initialEmployees from './data/employees';
-
-import React, { useState, useEffect } from 'react';
-
-
-
 
 function App() {
   const [employees, setEmployees] = useState([]);
@@ -26,11 +20,14 @@ function App() {
 
   const handleAddEmployee = (newEmployee) => {
     axios.post('http://localhost:3001/employees', newEmployee)
-      .then(res => {
-        // Add the new employee to local state
-        setEmployees(prev => [...prev, res.data]);
-      })
+      .then(res => setEmployees(prev => [...prev, res.data]))
       .catch(err => console.error("Error adding employee:", err));
+  };
+
+  const handleUpdateEmployee = (updatedEmployee) => {
+    setEmployees((prev) =>
+      prev.map(emp => (emp.id === updatedEmployee.id ? updatedEmployee : emp))
+    );
   };
 
   return (
@@ -38,7 +35,15 @@ function App() {
       <Header />
       <main>
         <Routes>
-          <Route path="/" element={<PersonList employees={employees} />} />
+          <Route 
+            path="/" 
+            element={
+              <PersonList 
+                employees={employees} 
+                onUpdateEmployee={handleUpdateEmployee} 
+              />
+            } 
+          />
           <Route path="/about" element={<About />} />
           <Route path="/add" element={<AddEmployee onAddEmployee={handleAddEmployee} />} />
         </Routes>

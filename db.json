@@ -1,136 +1,174 @@
 {
-    "employees": [
-      {
-        "id": 1,
-        "name": "John Doe",
-        "title": "Developer",
-        "salary": 60000,
-        "phone": "123-456-7890",
-        "email": "john@example.com",
-        "animal": "Dog",
-        "startDate": "2020-01-15",
-        "location": "New York",
-        "department": "Engineering",
-        "skills": ["React", "Node.js", "CSS"]
-      },
-      {
-        "id": 2,
-        "name": "Jussi Korhonen",
-        "title": "Developer",
-        "salary": 5100,
-        "phone": "040-2345678",
-        "email": "jussi.korhonen@example.com",
-        "animal": "Dog",
-        "startDate": "2023-12-01",
-        "location": "Tampere",
-        "department": "IT",
-        "skills": ["JavaScript", "React", "Node.js"]
-      },
-      {
-        "id": 3,
-        "name": "Laura Nieminen",
-        "title": "Data Analyst",
-        "salary": 4700,
-        "phone": "040-3456789",
-        "email": "laura.nieminen@example.com",
-        "animal": "Cat",
-        "startDate": "2014-06-15",
-        "location": "Turku",
-        "department": "Data Science",
-        "skills": ["SQL", "Python", "Data Visualization"]
-      },
-      {
-        "id": 4,
-        "name": "Mika Lehtonen",
-        "title": "Designer",
-        "salary": 4300,
-        "phone": "040-4567890",
-        "email": "mika.lehtonen@example.com",
-        "animal": "Fox",
-        "startDate": "2024-03-01",
-        "location": "Espoo",
-        "department": "Design",
-        "skills": ["UI/UX", "Figma", "Illustrator"]
-      },
-      {
-        "id": 5,
-        "name": "Sari Laine",
-        "title": "Team Lead",
-        "salary": 6000,
-        "phone": "040-5678901",
-        "email": "sari.laine@example.com",
-        "animal": "Elephant",
-        "startDate": "2015-06-06",
-        "location": "Helsinki",
-        "department": "IT",
-        "skills": ["Leadership", "Agile", "Scrum"]
-      },
-      {
-        "id": 6,
-        "name": "Pekka Rautiainen",
-        "title": "Marketing Manager",
-        "salary": 4800,
-        "phone": "040-6789012",
-        "email": "pekka.rautiainen@example.com",
-        "animal": "Parrot",
-        "startDate": "2022-09-01",
-        "location": "Vantaa",
-        "department": "Marketing",
-        "skills": ["SEO", "Social Media", "Campaigns"]
-      },
-      {
-        "id": 7,
-        "name": "Emma Salmi",
-        "title": "Finance Officer",
-        "salary": 4600,
-        "phone": "040-7890123",
-        "email": "emma.salmi@example.com",
-        "animal": "Koala",
-        "startDate": "2024-12-01",
-        "location": "Oulu",
-        "department": "Finance",
-        "skills": ["Excel", "Budgeting", "Auditing"]
-      },
-      {
-        "id": 8,
-        "name": "Timo Jokinen",
-        "title": "Sales Executive",
-        "salary": 4400,
-        "phone": "040-8901234",
-        "email": "timo.jokinen@example.com",
-        "animal": "Lion",
-        "startDate": "2010-06-06",
-        "location": "Tampere",
-        "department": "Sales",
-        "skills": ["CRM", "Negotiation", "Presentations"]
-      },
-      {
-        "id": 9,
-        "name": "Anna Mäkinen",
-        "title": "Recruiter",
-        "salary": 4100,
-        "phone": "040-9012345",
-        "email": "anna.makinen@example.com",
-        "animal": "Rabbit",
-        "startDate": "2024-12-20",
-        "location": "Helsinki",
-        "department": "Human Resources",
-        "skills": ["Interviewing", "Sourcing", "Employer Branding"]
-      },
-      {
-        "id": 10,
-        "name": "Ville Seppälä",
-        "title": "System Admin",
-        "salary": 5200,
-        "phone": "040-0123456",
-        "email": "ville.seppala@example.com",
-        "animal": "Bear",
-        "startDate": "2019-05-10",
-        "location": "Joensuu",
-        "department": "IT",
-        "skills": ["Linux", "Networking", "Security"]
-      }
-      
-    ]
-  }
-  
+  "employees": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "title": "Developer",
+      "salary": 70000,
+      "phone": "123-456-7890",
+      "email": "john@example.com",
+      "animal": "Dog",
+      "startDate": "2020-01-15",
+      "location": "New York",
+      "department": "Engineering",
+      "skills": [
+        "React",
+        "Node.js",
+        "CSS"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Jussi Korhonen",
+      "title": "Developer",
+      "salary": 5000,
+      "phone": "040-2345678",
+      "email": "jussi.korhonen@example.com",
+      "animal": "Dog",
+      "startDate": "2023-12-01",
+      "location": "Tampere",
+      "department": "IT",
+      "skills": [
+        "JavaScript",
+        "React",
+        "Node.js"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Laura Nieminen",
+      "title": "Data Analyst",
+      "salary": 4700,
+      "phone": "040-3456789",
+      "email": "laura.nieminen@example.com",
+      "animal": "Cat",
+      "startDate": "2014-06-15",
+      "location": "Turku",
+      "department": "Data Science",
+      "skills": [
+        "SQL",
+        "Python",
+        "Data Visualization"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Mika Lehtonen",
+      "title": "Designer",
+      "salary": 4300,
+      "phone": "040-4567890",
+      "email": "mika.lehtonen@example.com",
+      "animal": "Fox",
+      "startDate": "2024-03-01",
+      "location": "Espoo",
+      "department": "Design",
+      "skills": [
+        "UI/UX",
+        "Figma",
+        "Illustrator"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Sari Laine",
+      "title": "Team Lead",
+      "salary": 6000,
+      "phone": "040-5678901",
+      "email": "sari.laine@example.com",
+      "animal": "Elephant",
+      "startDate": "2015-06-06",
+      "location": "Helsinki",
+      "department": "IT",
+      "skills": [
+        "Leadership",
+        "Agile",
+        "Scrum"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Pekka Rautiainen",
+      "title": "Marketing Manager",
+      "salary": 4800,
+      "phone": "040-6789012",
+      "email": "pekka.rautiainen@example.com",
+      "animal": "Parrot",
+      "startDate": "2022-09-01",
+      "location": "Vantaa",
+      "department": "Marketing",
+      "skills": [
+        "SEO",
+        "Social Media",
+        "Campaigns"
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Emma Salmi",
+      "title": "Finance Officer",
+      "salary": 4600,
+      "phone": "040-7890123",
+      "email": "emma.salmi@example.com",
+      "animal": "Koala",
+      "startDate": "2024-12-01",
+      "location": "Oulu",
+      "department": "Finance",
+      "skills": [
+        "Excel",
+        "Budgeting",
+        "Auditing"
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Timo Jokinen",
+      "title": "Sales Executive",
+      "salary": 4400,
+      "phone": "040-8901234",
+      "email": "timo.jokinen@example.com",
+      "animal": "Lion",
+      "startDate": "2010-06-06",
+      "location": "Tampere",
+      "department": "Sales",
+      "skills": [
+        "CRM",
+        "Negotiation",
+        "Presentations"
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Anna Mäkinen",
+      "title": "Recruiter",
+      "salary": 4100,
+      "phone": "040-9012345",
+      "email": "anna.makinen@example.com",
+      "animal": "Rabbit",
+      "startDate": "2024-12-20",
+      "location": "Helsinki",
+      "department": "Human Resources",
+      "skills": [
+        "Interviewing",
+        "Sourcing",
+        "Employer Branding"
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Ville Seppälä",
+      "title": "System Admin",
+      "salary": 5200,
+      "phone": "040-0123456",
+      "email": "ville.seppala@example.com",
+      "animal": "Bear",
+      "startDate": "2019-05-10",
+      "location": "Joensuu",
+      "department": "IT",
+      "skills": [
+        "Linux",
+        "Networking",
+        "Security"
+      ]
+    }
+  ]
+}
