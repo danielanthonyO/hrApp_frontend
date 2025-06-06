@@ -1,23 +1,15 @@
-// src/App.jsx
 import React from 'react';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import Person from './components/Person/Person';
-import './App.css';
+import PersonList from './components/Person/PersonList';
+import employees from './data/employees';
 
 function App() {
   return (
-    <div className="app-container">
+    <div>
       <Header />
       <main>
-        <Person
-          name="Aino Virtanen"
-          title="HR Manager"
-          salary={4200}
-          phone="040-1234567"
-          email="aino.virtanen@example.com"
-          animal="🦉 Owl"
-        />
+        <PersonList employees={employees} />
       </main>
       <Footer />
     </div>
@@ -25,4 +17,3 @@ function App() {
 }
 
 export default App;
-
