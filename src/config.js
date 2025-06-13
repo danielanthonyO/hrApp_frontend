@@ -1,1 +1,1 @@
-export const API_BASE = "https://hrapp-backend-8nau.onrender.com/Api";
+export const API_BASE = "https://hrapp-backend-8nau.onrender.com/api";
