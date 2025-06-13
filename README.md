@@ -21,8 +21,8 @@ Before starting, make sure the following software is installed on your system:
 ### 1. 🔁 Clone the Repository
 
 ```bash
-git clone https://github.com/danielanthonyO/hrApp_react25k/tree/step-6-features
-cd lumo-event-manager
+git clone https://github.com/danielanthonyO/hrApp_react25k/
+cd hrApp_react25k
 ```
 
 ---
@@ -32,7 +32,7 @@ cd lumo-event-manager
 #### 🔧 Backend (Laravel)
 
 ```bash
-composer install
+composer run server
 ```
 
 #### 🎨 Frontend (React)
@@ -43,37 +43,7 @@ npm install
 
 ---
 
-### 3. ⚙️ Configure Environment Variables
-
-Create a `.env` file by copying the example:
-
-```bash
-cp .env.example .env
-```
-
-Then open `.env` and update the database and other necessary configurations (DB name, username, password, etc).
-
----
-
-### 4. 🔐 Generate Application Key
-
-```bash
-php artisan key:generate
-```
-
----
-
-### 5. 🗄️ Run Database Migrations
-
-Ensure your database is created and running. Then run:
-
-```bash
-php artisan migrate
-```
-
----
-
-### 6. 🧱 Build Frontend Assets
+### 🧱 Build Frontend Assets
 
 Compile frontend assets using Vite:
 
