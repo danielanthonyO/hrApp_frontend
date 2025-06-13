@@ -2,20 +2,8 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import useAxios from "../../hooks/useAxios";
 import styles from "./PersonCard.module.css";
-import {
-  FiEdit2,
-  FiEye,
-  FiX,
-  FiSave,
-  FiUser,
-  FiDollarSign,
-  FiMapPin,
-  FiBriefcase,
-  FiCalendar,
-  FiMail,
-  FiPhone,
-  FiCode,
-} from "react-icons/fi";
+import {FiEdit2, FiEye,FiX,FiSave,FiUser,FiDollarSign,FiMapPin,
+        FiBriefcase,FiCalendar,FiMail,FiPhone,FiCode,} from "react-icons/fi";
 
 // Animal name to emoji mapping
 const animalEmojis = {
@@ -151,7 +139,7 @@ const PersonCard = ({
             </div>
           )}
           {isNewEmployee && (
-            <div className={styles.probationBadge}>🔔 On Probotion.</div>
+            <div className={styles.probationBadge}>🔔 Schedule probation review.</div>
           )}
         </div>
       </div>

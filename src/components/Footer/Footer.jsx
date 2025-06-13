@@ -17,8 +17,8 @@ function Footer() {
       <div className="footer-top">
         <h2>For assistance</h2>
         <div className="footer-buttons">
-          <Link to="/events/create" className="start">Get started</Link>
-          <Link to="/contact" className="contact">Contact us</Link>
+          <Link to="/add" className="start" onClick={() => setMenuOpen(false)}>Get started</Link>
+          <Link to="/about" className="contact" onClick={() => setMenuOpen(false)}>Contact us</Link>
         </div>
       </div>
 
