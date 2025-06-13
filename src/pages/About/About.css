@@ -1,0 +1,113 @@
+.about-section {
+    padding: 5rem 10%;
+    background: linear-gradient(to bottom, rgba(88, 28, 135, 0.8), rgba(0, 0, 0, 0.9));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-container {
+    margin: 0 auto;
+  }
+  
+  .about-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .about-title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .about-title {
+      font-size: 3rem;
+    }
+  }
+  
+  .about-subtitle {
+    font-size: 1.25rem;
+    color: #D1D5DB;
+    max-width: 48rem;
+    margin: 0 auto;
+  }
+  
+  .about-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  @media (min-width: 1024px) {
+    .about-columns {
+      flex-direction: row;
+    }
+  }
+  
+  .about-left,
+  .about-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .about-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(6px);
+    border-radius: 0.75rem;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .about-card:hover {
+    border-color: rgba(192, 132, 252, 0.3);
+    transform: translateY(-5px);
+  }
+  
+  .about-icon-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-icon {
+    padding: 0.75rem;
+    background-color: rgba(147, 51, 234, 0.2);
+    border-radius: 9999px;
+    display: inline-flex;
+  }
+  
+  .about-icon svg {
+    font-size: 1.5rem;
+    color: #D8B4FE;
+  }
+  
+  .about-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .about-text {
+    color: #D1D5DB;
+  }
+  
+  .about-list {
+    margin-top: 1rem;
+    color: #D1D5DB;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about-list li {
+    display: flex;
+    align-items: start;
+    gap: 0.75rem;
+  }
+  

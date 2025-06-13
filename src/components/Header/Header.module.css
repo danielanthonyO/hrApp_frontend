@@ -1,0 +1,128 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  color: #c084fc;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Nav Container */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Desktop Nav Links */
+.nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav li a,
+.themeToggle {
+  font-size: 1rem;
+  color: var(--text-color);
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.themeToggle {
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  padding: 0.5rem 0.75rem;
+  font-size: 1.2rem;
+}
+
+.nav li a:hover,
+.themeToggle:hover {
+  color: var(--highlight-color, #facc15);
+}
+
+/* Hamburger Button */
+.menuToggle {
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  color: var(--text-color);
+  padding: 0.5rem;
+  line-height: 1;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .menuToggle {
+    display: block;
+  }
+
+  .nav {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    display: none;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav li {
+    width: 100%;
+  }
+
+  .nav li a,
+  .themeToggle {
+    display: block;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    text-align: left;
+  }
+
+  .themeToggle {
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-radius: 0;
+    text-align: left;
+  }
+}
