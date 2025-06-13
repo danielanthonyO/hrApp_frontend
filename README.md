@@ -1,12 +1,82 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# ✨ Lumo Event Manager
 
-Currently, two official plugins are available:
+**HR Application** is a modern, full-stack web application designed to help users in Finland manage and explore summer events efficiently. The project is built using **Laravel (PHP)** for the backend and **React** for the frontend.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📦 Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Before starting, make sure the following software is installed on your system:
+
+-   🟢 **Node.js** (v16 or higher)
+-   📦 **npm** (comes with Node.js)
+-   🗃️ **Database** (e.g., MySQL or SQLite)
+
+---
+
+## 🚀 Setup Instructions
+
+### 1. 🔁 Clone the Repository
+
+```bash
+git clone https://github.com/danielanthonyO/hrApp_react25k/tree/step-6-features
+cd lumo-event-manager
+```
+
+---
+
+### 2. 📥 Install Dependencies
+
+#### 🔧 Backend (Laravel)
+
+```bash
+composer install
+```
+
+#### 🎨 Frontend (React)
+
+```bash
+npm install
+```
+
+---
+
+### 3. ⚙️ Configure Environment Variables
+
+Create a `.env` file by copying the example:
+
+```bash
+cp .env.example .env
+```
+
+Then open `.env` and update the database and other necessary configurations (DB name, username, password, etc).
+
+---
+
+### 4. 🔐 Generate Application Key
+
+```bash
+php artisan key:generate
+```
+
+---
+
+### 5. 🗄️ Run Database Migrations
+
+Ensure your database is created and running. Then run:
+
+```bash
+php artisan migrate
+```
+
+---
+
+### 6. 🧱 Build Frontend Assets
+
+Compile frontend assets using Vite:
+
+```bash
+npm run dev
+```
