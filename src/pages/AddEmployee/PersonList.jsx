@@ -4,6 +4,8 @@ import PersonCard from './PersonCard';
 import styles from "./PersonList.module.css";
 import { FiUsers } from "react-icons/fi";
 
+
+
 const PersonList = ({ employees, onUpdateEmployee }) => {
   return (
     <section className={styles.section}>
@@ -23,18 +25,22 @@ const PersonList = ({ employees, onUpdateEmployee }) => {
 
       {/* Employee Cards Grid */}
       <div className={styles.personList}>
-        {employees.map((emp, index) => (
-          <motion.div
-            key={emp.id}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-            viewport={{ once: true }}
-            whileHover={{ y: -5 }}
-          >
-            <PersonCard {...emp} onUpdateEmployee={onUpdateEmployee} />
-          </motion.div>
-        ))}
+        {employees?.length > 0 ? (
+          employees.map((emp, index) => (
+            <motion.div
+              key={emp.id}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -5 }}
+            >
+              <PersonCard {...emp} onUpdateEmployee={onUpdateEmployee} />
+            </motion.div>
+          ))
+        ) : (
+          <p>No employees to display.</p>
+        )}
       </div>
     </section>
   );

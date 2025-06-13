@@ -1,8 +1,16 @@
-# React + Vite
+## Live Application Links
 
-# ✨ Lumo Event Manager
+### 🔗 Frontend (React App)
+[https://your-frontend-url.com]
+Github: (https://github.com/danielanthonyO/hrApp_frontend.git)
 
-**HR Application** is a modern, full-stack web application designed to help users in Finland manage and explore summer events efficiently. The project is built using **Laravel (PHP)** for the backend and **React** for the frontend.
+
+
+# ✨ HR Employee Manager — Frontend (React + Vite)
+
+A modern, interactive frontend built with **React** and **Vite** to manage employee data in an HR application.
+
+**HR Application** is a modern, full-stack web application designed to help users in Finland manage and explore summer events efficiently. 
 
 ---
 
@@ -21,19 +29,13 @@ Before starting, make sure the following software is installed on your system:
 ### 1. 🔁 Clone the Repository
 
 ```bash
-git clone https://github.com/danielanthonyO/hrApp_react25k/
-cd hrApp_react25k
+git clone https://github.com/danielanthonyO/hrApp_frontend.git
+cd hrApp_frontend
 ```
 
 ---
 
 ### 2. 📥 Install Dependencies
-
-#### 🔧 Backend (Laravel)
-
-```bash
-composer run server
-```
 
 #### 🎨 Frontend (React)
 

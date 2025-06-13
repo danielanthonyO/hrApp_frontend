@@ -104,7 +104,7 @@ const PersonCard = ({
     }
 
     try {
-      const res = await patch(`http://localhost:3001/employees/${id}`, updates);
+      const res = await patch(`/employees/${id}`, updates);
       onUpdateEmployee(res.data);
       setIsEditing(false);
       setSavedMessage("Changes saved successfully!");

@@ -1,13 +1,12 @@
 // src/App.jsx
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import PersonList from "./pages/AddEmployee/PersonList";
 import About from "./pages/About/About";
 import AddEmployee from "./pages/AddEmployee/AddEmployee";
-
+import { API_BASE } from "./config.js";
 import useAxios from "./hooks/useAxios";
 
 function App() {
@@ -15,13 +14,13 @@ function App() {
   const { get, post } = useAxios();
 
   useEffect(() => {
-    get("http://localhost:3001/employees")
+    get(`/employees`)
       .then((res) => setEmployees(res.data))
       .catch((err) => console.error("Error fetching employees:", err));
   }, [get]);
 
   const handleAddEmployee = (newEmployee) => {
-    post("http://localhost:3001/employees", newEmployee)
+    post(`/employees`, newEmployee)
       .then((res) => setEmployees((prev) => [...prev, res.data]))
       .catch((err) => console.error("Error adding employee:", err));
   };
