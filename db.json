@@ -4,7 +4,7 @@
       "id": "1",
       "name": "John Doe",
       "title": "Developer",
-      "salary": 70000,
+      "salary": 5001,
       "phone": "123-456-7890",
       "email": "john@example.com",
       "animal": "Dog",
@@ -21,13 +21,13 @@
       "id": "2",
       "name": "Jussi Korhonen",
       "title": "Developer",
-      "salary": 5000,
+      "salary": 6000,
       "phone": "040-2345678",
-      "email": "jussi.korhonen@example.com",
+      "email": "korhonen@example.com",
       "animal": "Dog",
       "startDate": "2023-12-01",
       "location": "Tampere",
-      "department": "IT",
+      "department": "HR",
       "skills": [
         "JavaScript",
         "React",
@@ -38,9 +38,9 @@
       "id": "3",
       "name": "Laura Nieminen",
       "title": "Data Analyst",
-      "salary": 4700,
+      "salary": 3000,
       "phone": "040-3456789",
-      "email": "laura.nieminen@example.com",
+      "email": "nieminen@example.com",
       "animal": "Cat",
       "startDate": "2014-06-15",
       "location": "Turku",
@@ -48,7 +48,7 @@
       "skills": [
         "SQL",
         "Python",
-        "Data Visualization"
+        "Visualization"
       ]
     },
     {
@@ -57,7 +57,7 @@
       "title": "Designer",
       "salary": 4300,
       "phone": "040-4567890",
-      "email": "mika.lehtonen@example.com",
+      "email": "lehtonen@example.com",
       "animal": "Fox",
       "startDate": "2024-03-01",
       "location": "Espoo",
@@ -74,11 +74,11 @@
       "title": "Team Lead",
       "salary": 6000,
       "phone": "040-5678901",
-      "email": "sari.laine@example.com",
+      "email": "laine@example.com",
       "animal": "Elephant",
       "startDate": "2015-06-06",
       "location": "Helsinki",
-      "department": "IT",
+      "department": "Information Technology",
       "skills": [
         "Leadership",
         "Agile",
@@ -91,7 +91,7 @@
       "title": "Marketing Manager",
       "salary": 4800,
       "phone": "040-6789012",
-      "email": "pekka.rautiainen@example.com",
+      "email": "rautiainen@example.com",
       "animal": "Parrot",
       "startDate": "2022-09-01",
       "location": "Vantaa",
@@ -106,9 +106,9 @@
       "id": "7",
       "name": "Emma Salmi",
       "title": "Finance Officer",
-      "salary": 4600,
+      "salary": 5000,
       "phone": "040-7890123",
-      "email": "emma.salmi@example.com",
+      "email": "salmi@example.com",
       "animal": "Koala",
       "startDate": "2024-12-01",
       "location": "Oulu",
@@ -125,7 +125,7 @@
       "title": "Sales Executive",
       "salary": 4400,
       "phone": "040-8901234",
-      "email": "timo.jokinen@example.com",
+      "email": "jokinen@example.com",
       "animal": "Lion",
       "startDate": "2010-06-06",
       "location": "Tampere",
@@ -133,7 +133,7 @@
       "skills": [
         "CRM",
         "Negotiation",
-        "Presentations"
+        "Scrum"
       ]
     },
     {
@@ -142,7 +142,7 @@
       "title": "Recruiter",
       "salary": 4100,
       "phone": "040-9012345",
-      "email": "anna.makinen@example.com",
+      "email": "makinen@example.com",
       "animal": "Rabbit",
       "startDate": "2024-12-20",
       "location": "Helsinki",
@@ -150,7 +150,7 @@
       "skills": [
         "Interviewing",
         "Sourcing",
-        "Employer Branding"
+        "Branding"
       ]
     },
     {
@@ -159,7 +159,7 @@
       "title": "System Admin",
       "salary": 5200,
       "phone": "040-0123456",
-      "email": "ville.seppala@example.com",
+      "email": "seppala@example.com",
       "animal": "Bear",
       "startDate": "2019-05-10",
       "location": "Joensuu",
@@ -168,6 +168,138 @@
         "Linux",
         "Networking",
         "Security"
+      ]
+    },
+    {
+      "id": "a1c1",
+      "name": "hshhs",
+      "title": "hshshhs",
+      "salary": 4000,
+      "phone": "0468413619",
+      "email": "tony190uk@yahoo.com",
+      "animal": "fox",
+      "startDate": "2025-06-13",
+      "location": "Espoo, FIN",
+      "department": "HR",
+      "skills": [
+        "CODING"
+      ]
+    },
+    {
+      "id": "f18b",
+      "name": "Lanre",
+      "title": "hshsh",
+      "salary": 3000,
+      "phone": "0468413620",
+      "email": "tony190uk@yahoo.com",
+      "animal": "fox",
+      "startDate": "2025-06-14",
+      "location": "Helsinki",
+      "department": "HR",
+      "skills": [
+        "swimming"
+      ]
+    },
+    {
+      "id": "ada1",
+      "name": "Daniel",
+      "title": "hdhhd",
+      "salary": 5000,
+      "phone": "0468413620",
+      "email": "tony190uk@yahoo.com",
+      "animal": "fox",
+      "startDate": "2025-06-06",
+      "location": "Espoo",
+      "department": "HR",
+      "skills": [
+        "swimming",
+        "dancing",
+        "reading"
+      ]
+    },
+    {
+      "id": "e011",
+      "name": "Enoch",
+      "title": "Electrical Engineer",
+      "salary": 5000,
+      "phone": "0468413620",
+      "email": "tony190uk@yahoo.com",
+      "animal": "Sloth",
+      "startDate": "2025-06-09",
+      "location": "Espoo",
+      "department": "Engineering",
+      "skills": [
+        "Football",
+        "coding",
+        "design"
+      ]
+    },
+    {
+      "id": "60c5",
+      "name": "Daniel Enoch",
+      "title": "Swimmer",
+      "salary": 4000,
+      "phone": "0468413620",
+      "email": "tony190uk@yahoo.com",
+      "animal": "fox",
+      "startDate": "2025-06-26",
+      "location": "Espoo",
+      "department": "Engineering",
+      "skills": [
+        "swimming",
+        "dancing",
+        "reading"
+      ]
+    },
+    {
+      "id": "d18a",
+      "name": "Emma Enoch",
+      "title": "Medical doctor",
+      "salary": 7001,
+      "phone": "0468413620",
+      "email": "tony190uk@yahoo.com",
+      "favouriteAnimal": "Sloth",
+      "startDate": "2025-05-31",
+      "location": "Espoo",
+      "department": "Medicine",
+      "skills": [
+        "swimming",
+        "dancing",
+        "reading"
+      ]
+    },
+    {
+      "id": "677b",
+      "name": "Daniel xbay",
+      "title": "Testing",
+      "salary": 4100,
+      "phone": "0468413620",
+      "email": "tony190uk@yahoo.com",
+      "favouriteAnimal": "Sloth",
+      "startDate": "2025-06-21",
+      "location": "Espoo",
+      "department": "Engineering",
+      "skills": [
+        "swimming",
+        "dancing",
+        "reading"
+      ]
+    },
+    {
+      "id": "f249",
+      "name": "hdhhdhd",
+      "title": "hehdhhd",
+      "salary": 4000,
+      "phone": "0468413620",
+      "email": "tony190uk@yahoo.com",
+      "favouriteAnimal": "Sloth",
+      "startDate": "2010-06-12",
+      "location": "Espoo",
+      "department": "Engineering",
+      "skills": [
+        "swimming",
+        "dancing",
+        "reading"
       ]
     }
   ]

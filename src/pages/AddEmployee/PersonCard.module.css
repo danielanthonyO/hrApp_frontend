@@ -1,0 +1,227 @@
+.personCard {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  color: #d1d5db;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.personCard:hover {
+  border-color: rgba(192, 132, 252, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.userIcon {
+  padding: 0.75rem;
+  background-color: rgba(147, 51, 234, 0.2);
+  border-radius: 9999px;
+  display: inline-flex;
+}
+
+.userIcon svg {
+  font-size: 1.5rem;
+  color: #d8b4fe;
+}
+
+.name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+}
+
+.animal {
+  color: #d8b4fe;
+  font-weight: normal;
+}
+
+.title {
+  margin: 0.25rem 0 0;
+  color: #d1d5db;
+  font-size: 0.9rem;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.infoIcon {
+  color: #d8b4fe;
+  min-width: 20px;
+}
+
+.infoLabel {
+  font-weight: 500;
+  color: white;
+  min-width: 80px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skillTag {
+  background: rgba(147, 51, 234, 0.2);
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+}
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.inputIcon {
+  color: #d8b4fe;
+}
+
+.formInput {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: #d8b4fe;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.button svg {
+  font-size: 1rem;
+}
+
+.editButton {
+  background: rgba(147, 51, 234, 0.2);
+  color: #d8b4fe;
+}
+
+.editButton:hover {
+  background: rgba(147, 51, 234, 0.3);
+}
+
+.detailsButton {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.detailsButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.saveButton {
+  background: rgba(16, 185, 129, 0.2);
+  color: #6ee7b7;
+}
+
+.saveButton:hover {
+  background: rgba(16, 185, 129, 0.3);
+}
+
+.cancelButton {
+  background: rgba(239, 68, 68, 0.2);
+  color: #fca5a5;
+}
+
+.cancelButton:hover {
+  background: rgba(239, 68, 68, 0.3);
+}
+
+.savedMessage {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: rgba(16, 185, 129, 0.2);
+  color: #6ee7b7;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+/* Add these to your existing styles */
+.anniversaryBadge {
+  background: rgba(234, 179, 8, 0.2);
+  color: #facc15;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.probationBadge {
+  background: rgba(59, 130, 246, 0.2);
+  color: #93c5fd;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.animal {
+  font-size: 1.2em;
+  vertical-align: middle;
+}
