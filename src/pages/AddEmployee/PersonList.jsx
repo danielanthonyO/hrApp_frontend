@@ -4,8 +4,6 @@ import PersonCard from './PersonCard';
 import styles from "./PersonList.module.css";
 import { FiUsers } from "react-icons/fi";
 
-
-
 const PersonList = ({ employees, onUpdateEmployee }) => {
   return (
     <section className={styles.section}>
@@ -31,7 +29,7 @@ const PersonList = ({ employees, onUpdateEmployee }) => {
               key={emp.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.3, delay: Math.min(index * 0.05, 0.2) }}
               viewport={{ once: true }}
               whileHover={{ y: -5 }}
             >
@@ -47,3 +45,4 @@ const PersonList = ({ employees, onUpdateEmployee }) => {
 };
 
 export default PersonList;
+

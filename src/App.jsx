@@ -6,7 +6,7 @@ import Footer from "./components/Footer/Footer";
 import PersonList from "./pages/AddEmployee/PersonList";
 import About from "./pages/About/About";
 import AddEmployee from "./pages/AddEmployee/AddEmployee";
-import { API_BASE } from "./config.js";
+import { API_BASE } from "./config";
 import useAxios from "./hooks/useAxios";
 
 function App() {
