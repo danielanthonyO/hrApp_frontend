@@ -17,7 +17,6 @@ const animalEmojis = {
   bear: "🐻",
   rabbit: "🐰",
   wolf: "🐺",
-  // Add more mappings as needed
 };
 
 const PersonCard = ({
