@@ -52,3 +52,6 @@ Compile frontend assets using Vite:
 ```bash
 npm run dev
 ```
+
+
+# this is just the beginning NOW NOW NOW 
